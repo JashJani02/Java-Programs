@@ -1,0 +1,282 @@
+//Conditional Statement
+import java.util.Scanner;
+public class Conditionals1 
+
+/*
+   CONDITIONAL STATEMENTS
+    1. IF
+    2. IF-ELSE
+    3. IF-ELSE-IF Ladder
+    4. NESTED IF
+    5. SWITCH
+
+
+    SYNTAX:- 
+
+    1. IF
+    if (condition)
+    {
+        System.out.println("Statement Block");
+    }
+
+    2. IF-ELSE
+
+    if (condition)
+    {
+        System.out.println("Statement Block 1");
+    }
+    else
+    {
+        System.out.println("Statement Block 2");
+    }
+
+    3. IF-ELSE-IF Ladder
+
+    if (condition )
+    {
+        //code
+    }
+    else if (condition)
+    {
+    
+    }
+    else
+    {
+        //code
+    }
+
+    4. NESTED IF
+
+    if (condition)
+    {
+        if (condition)
+        {
+            //code
+        }
+    }
+
+    5. SWITCH
+
+    switch (expression)
+    {
+        case value1:
+        //code
+        break;
+
+        case value2:
+        //code
+        break;
+
+        default:
+        //code
+    }
+
+        LOOPs
+
+        1. FOR
+        2. WHILE
+        3. DO-WHILE
+
+        1. FOR
+
+        for (initialization; condition; increment/decrement)
+        {
+            //code
+        }
+
+        2. WHILE
+
+        while (condition)
+        {
+            //code
+        }
+
+        3. DO-WHILE
+
+        do
+        {
+            //code
+
+        }while (condition);
+
+        4. Nested-for loop
+
+        for (initialization; condition; increment/decrement)
+        {
+            for (initialization; condition; increment/decrement)
+            {
+                //code
+            }
+        }
+
+
+        FUNCTIONS
+
+        1. Built-in Functions
+        2. User-defined Functions
+
+        1. Built-in Functions
+
+        1.1. Math Functions
+        1.2. String Functions
+        1.3. Array Functions
+        1.4. Date Functions
+        
+        1.1. Math Functions
+
+        1.1.1. Math.abs() THIS FUNCTION IS USED TO FIND THE ABSOLUTE VALUE OF A NUMBER
+        1.1.2. Math.sqrt() THIS FUNCTION IS USED TO FIND THE SQUARE ROOT OF A NUMBER
+        1.1.3. Math.pow() THIS FUNCTION IS USED TO FIND THE POWER OF A NUMBER
+        1.1.4. Math.max() THIS FUNCTION IS USED TO FIND THE MAXIMUM OF TWO NUMBERS
+        1.1.5. Math.min() THIS FUNCTION IS USED TO FIND THE MINIMUM OF TWO NUMBERS
+        1.1.6. Math.ceil() THIS FUNCTION IS USED TO ROUND OFF A NUMBER TO THE NEXT HIGHER INTEGER
+        1.1.7. Math.floor() THIS FUNCTION IS USED TO ROUND OFF A NUMBER TO THE NEXT LOWER INTEGER
+        1.1.8. Math.round() THIS FUNCTION IS USED TO ROUND OFF A NUMBER TO THE NEAREST INTEGER
+        1.1.9. Math.random() THIS FUNCTION IS USED TO GENERATE A RANDOM NUMBER
+        1.1.10. Math.sin() THIS FUNCTION IS USED TO FIND THE SINE OF A NUMBER
+        1.1.11. Math.cos() THIS FUNCTION IS USED TO FIND THE COSINE OF A NUMBER
+        1.1.12. Math.tan() THIS FUNCTION IS USED TO FIND THE TANGENT OF A NUMBER
+        1.1.13. Math.asin() THIS FUNCTION IS USED TO FIND THE ARC SINE OF A NUMBER
+        1.1.14. Math.acos() THIS FUNCTION IS USED TO FIND THE ARC COSINE OF A NUMBER
+        1.1.15. Math.atan() THIS FUNCTION IS USED TO FIND THE ARC TANGENT OF A NUMBER
+        1.1.16. Math.toDegrees() THIS FUNCTION IS USED TO CONVERT RADIANS TO DE
+        1.1.17. Math.toRadians() THIS FUNCTION IS USED TO CONVERT DEGREES TO RADIANS
+        1.1.18. Math.log() THIS FUNCTION IS USED TO FIND THE NATURAL LOGARITHM OF A NUMBER
+        1.1.19. Math.log10() THIS FUNCTION IS USED TO FIND THE COMMON LOGARITHM OF A NUMBER
+        1.1.20. Math.exp() THIS FUNCTION IS USED TO FIND THE EXPONENTIAL VALUE OF A NUMBER
+        1.1.21. Math.signum() THIS FUNCTION IS USED TO FIND THE SIGNUM FUNCTION OF A NUMBER
+        1.1.22. Math.rint() THIS FUNCTION IS USED TO ROUND OFF A NUMBER TO THE NEAREST INTEGER
+        1.1.23. Math.cbrt() THIS FUNCTION IS USED TO FIND THE CUBE ROOT OF A NUMBER
+        1.1.24. Math.hypot() THIS FUNCTION IS USED TO FIND THE HYPOTENUSE OF A RIGHT ANGLED TRIANGLE
+        1.1.25. Math.atan2() THIS FUNCTION IS USED TO FIND THE ANGLE THETA FROM THE RECTANGULAR COORDINATES (X,Y)
+        1.1.26. Math.nextAfter() THIS FUNCTION IS USED TO FIND THE NEXT NUMBER AFTER A NUMBER IN THE DIRECTION OF ANOTHER NUMBER
+        1.1.27. Math.nextUp() THIS FUNCTION IS USED TO FIND THE NEXT NUMBER AFTER A NUMBER
+        1.1.28. Math.nextDown() THIS FUNCTION IS USED TO FIND THE NEXT NUMBER BEFORE A NUMBER
+        1.1.29. Math.scalb() THIS FUNCTION IS USED TO FIND THE SCALB OF A NUMBER
+        1.1.30. Math.ulp() THIS FUNCTION IS USED TO FIND THE SIZE OF THE UNIT IN THE LAST PLACE OF A NUMBER
+        1.1.31. Math.getExponent() THIS FUNCTION IS USED TO FIND THE EXPONENT OF A NUMBER
+        1.1.32. Math.IEEEremainder() THIS FUNCTION IS USED TO FIND THE REMAINDER OF A NUMBER DIVIDED BY ANOTHER NUMBER
+        1.1.33. Math.floorDiv() THIS FUNCTION IS USED TO FIND THE FLOOR DIVISION OF A NUMBER
+        1.1.34. Math.floorMod() THIS FUNCTION IS USED TO FIND THE FLOOR MODULUS OF A NUMBER
+        1.1.35. Math.multiplyExact() THIS FUNCTION IS USED TO MULTIPLY TWO NUMBERS EXACTLY
+        1.1.36. Math.addExact() THIS FUNCTION IS USED TO ADD TWO NUMBERS EXACTLY
+        1.1.37. Math.subtractExact() THIS FUNCTION IS USED TO SUBTRACT TWO NUMBERS EXACTLY
+        1.1.38. Math.incrementExact() THIS FUNCTION IS USED TO INCREMENT A NUMBER EXACTLY
+        1.1.39. Math.decrementExact() THIS FUNCTION IS USED TO DECREMENT A NUMBER EXACTLY
+        1.1.40. Math.negateExact() THIS FUNCTION IS USED TO NEGATE A NUMBER EXACTLY
+        
+        
+        1.2. String Functions
+
+        1.2.1. length() THIS FUNCTION IS USED TO FIND THE LENGTH OF A STRING
+        1.2.2. charAt() THIS FUNCTION IS USED TO FIND THE CHARACTER AT A SPECIFIC INDEX
+        1.2.3. toUpperCase() THIS FUNCTION IS USED TO CONVERT A STRING TO UPPERCASE
+        1.2.4. toLowerCase() THIS FUNCTION IS USED TO CONVERT A STRING TO LOWERCASE
+        1.2.5. trim() THIS FUNCTION IS USED TO REMOVE THE WHITE SPACES FROM THE BEGINNING AND END OF A STRING
+        1.2.6. substring() THIS FUNCTION IS USED TO EXTRACT A SUBSTRING FROM A STRING
+        1.2.7. replace() THIS FUNCTION IS USED TO REPLACE A CHARACTER OR A STRING WITH ANOTHER CHARACTER OR STRING
+        1.2.8. indexOf() THIS FUNCTION IS USED TO FIND THE INDEX OF A CHARACTER OR A STRING
+        1.2.9. lastIndexOf() THIS FUNCTION IS USED TO FIND THE LAST INDEX OF A CHARACTER OR A STRING
+        1.2.10. equals() THIS FUNCTION IS USED TO COMPARE TWO STRINGS
+        1.2.11. equalsIgnoreCase() THIS FUNCTION IS USED TO COMPARE TWO STRINGS IGNORING THE CASE
+        1.2.12. startsWith() THIS FUNCTION IS USED TO CHECK IF A STRING STARTS WITH A SPECIFIC CHARACTER OR STRING
+        1.2.13. endsWith() THIS FUNCTION IS USED TO CHECK IF A STRING ENDS WITH A SPECIFIC CHARACTER OR STRING
+        1.2.14. contains() THIS FUNCTION IS USED TO CHECK IF A STRING CONTAINS A SPECIFIC CHARACTER OR STRING
+        1.2.15. split() THIS FUNCTION IS USED TO SPLIT A STRING INTO AN ARRAY OF STRINGS
+        1.2.16. join() THIS FUNCTION IS USED TO JOIN THE ELEMENTS OF AN ARRAY INTO A STRING
+        1.2.17. concat() THIS FUNCTION IS USED TO CONCATENATE TWO STRINGS
+        1.2.18. compareTo() THIS FUNCTION IS USED TO COMPARE TWO STRINGS LEXICOGRAPHICALLY
+        1.2.19. valueOf() THIS FUNCTION IS USED TO CONVERT A VALUE TO A STRING
+        1.2.20. format() THIS FUNCTION IS USED TO FORMAT A STRING
+        1.2.21. intern() THIS FUNCTION IS USED TO RETURN THE INTERNED STRING
+        1.2.22. isEmpty() THIS FUNCTION IS USED TO CHECK IF A STRING IS EMPTY
+        1.2.23. replaceAll() THIS FUNCTION IS USED TO REPLACE ALL THE OCCURRENCES OF A CHARACTER OR A STRING WITH ANOTHER CHARACTER OR STRING
+        1.2.24. replaceFirst() THIS FUNCTION IS USED TO REPLACE THE FIRST OCCURRENCE OF A CHARACTER OR A STRING WITH ANOTHER CHARACTER OR STRING
+        1.2.25. toCharArray() THIS FUNCTION IS USED TO CONVERT A STRING TO A CHARACTER ARRAY
+        1.2.26. getBytes() THIS FUNCTION IS USED TO CONVERT A STRING TO A BYTE ARRAY
+        1.2.27. matches() THIS FUNCTION IS USED TO CHECK IF A STRING MATCHES A REGULAR EXPRESSION   
+        1.2.28. codePointAt() THIS FUNCTION IS USED TO FIND THE UNICODE VALUE OF A CHARACTER AT A SPECIFIC INDEX
+        1.2.29. codePointBefore() THIS FUNCTION IS USED TO FIND THE UNICODE VALUE OF A CHARACTER BEFORE A SPECIFIC INDEX
+        1.2.30. codePointCount() THIS FUNCTION IS USED TO FIND THE NUMBER OF CHARACTERS BETWEEN TWO INDEXES
+        1.2.31. offsetByCodePoints() THIS FUNCTION IS USED TO FIND THE INDEX OF A CHARACTER BY MOVING A SPECIFIC NUMBER OF CODE POINTS
+        1.2.32. compareToIgnoreCase() THIS FUNCTION IS USED TO COMPARE TWO STRINGS LEXICOGRAPHICALLY IGNORING THE CASE
+        1.2.33. getChars() THIS FUNCTION IS USED TO COPY CHARACTERS FROM A STRING TO A CHARACTER ARRAY
+        
+        
+
+        1.3. Array Functions
+
+        1.3.1. length THIS FUNCTION IS USED TO FIND THE LENGTH OF AN ARRAY
+        1.3.2. sort() THIS FUNCTION IS USED TO SORT AN ARRAY
+        1.3.3. fill() THIS FUNCTION IS USED TO FILL AN ARRAY WITH A SPECIFIC VALUE
+        1.3.4. copyOf() THIS FUNCTION IS USED TO COPY AN ARRAY
+        1.3.5. copyOfRange() THIS FUNCTION IS USED TO COPY A RANGE OF AN ARRAY
+        1.3.6. binarySearch() THIS FUNCTION IS USED TO SEARCH AN ELEMENT IN AN ARRAY
+        1.3.7. equals() THIS FUNCTION IS USED TO COMPARE TWO ARRAYS
+        1.3.8. asList() THIS FUNCTION IS USED TO CONVERT AN ARRAY TO A LIST
+        1.3.9. toString() THIS FUNCTION IS USED TO CONVERT AN ARRAY TO A STRING
+        1.3.10. hashCode() THIS FUNCTION IS USED TO FIND THE HASH CODE OF AN ARRAY
+        1.3.11. deepEquals() THIS FUNCTION IS USED TO COMPARE TWO ARRAYS DEEPLY
+        1.3.12. deepHashCode() THIS FUNCTION IS USED TO FIND THE DEEP HASH CODE OF AN ARRAY
+        1.3.13. deepToString() THIS FUNCTION IS USED TO CONVERT AN ARRAY TO A STRING DEEPLY
+        1.3.14. stream() THIS FUNCTION IS USED TO CONVERT AN ARRAY TO A STREAM
+        1.3.15. parallelStream() THIS FUNCTION IS USED TO CONVERT AN ARRAY TO A PARALLEL STREAM
+        1.3.16. setAll() THIS FUNCTION IS USED TO SET ALL THE ELEMENTS OF AN ARRAY
+        1.3.17. parallelSetAll() THIS FUNCTION IS USED TO SET ALL THE ELEMENTS OF AN ARRAY PARALLELLY
+        1.3.18. spliterator() THIS FUNCTION IS USED TO CREATE A SPLITERATOR FOR AN ARRAY
+        1.3.19. stream() THIS FUNCTION IS USED TO CREATE A STREAM FOR AN ARRAY
+        1.3.20. parallelStream() THIS FUNCTION IS USED TO CREATE A PARALLEL STREAM FOR AN ARRAY
+    
+        1.4. Data Functions
+
+        1.4.1. getTime() THIS FUNCTION IS USED TO GET THE TIME IN MILLISECONDS
+        1.4.2. getDate() THIS FUNCTION IS USED TO GET THE DATE
+        1.4.3. getYear() THIS FUNCTION IS USED TO GET THE YEAR
+        1.4.4. getMonth() THIS FUNCTION IS USED TO GET THE MONTH
+        1.4.5. getDay() THIS FUNCTION IS USED TO GET THE DAY
+        1.4.6. getHours() THIS FUNCTION IS USED TO GET THE HOURS
+        1.4.7. getMinutes() THIS FUNCTION IS USED TO GET THE MINUTES
+        1.4.8. getSeconds() THIS FUNCTION IS USED TO GET THE SECONDS
+        1.4.9. getMilliseconds() THIS FUNCTION IS USED TO GET THE MILLISECONDS
+        1.4.10. getTimezoneOffset() THIS FUNCTION IS USED TO GET THE TIMEZONE OFFSET
+        1.4.11. getTimeZone() THIS FUNCTION IS USED TO GET THE TIMEZONE
+        1.4.12. getLocale() THIS FUNCTION IS USED TO GET THE LOCALE
+        1.4.13. getCountry() THIS FUNCTION IS USED TO GET THE COUNTRY
+        1.4.14. getLanguage() THIS FUNCTION IS USED TO GET THE LANGUAGE
+        1.4.15. getDisplayLanguage() THIS FUNCTION IS USED TO GET THE DISPLAY LANGUAGE
+        1.4.16. getDisplayCountry() THIS FUNCTION IS USED TO GET THE DISPLAY COUNTRY
+        1.4.17. getDisplayName() THIS FUNCTION IS USED TO GET THE DISPLAY NAME
+        1.4.18. getDisplayVariant() THIS FUNCTION IS USED TO GET THE DISPLAY VARIANT
+        1.4.19. getDisplayScript() THIS FUNCTION IS USED TO GET THE DISPLAY SCRIPT
+        1.4.20. getDisplayName() THIS FUNCTION IS USED TO GET THE DISPLAY NAME
+
+    */
+
+
+ 
+
+
+
+{
+    public static void main (String[] args)
+    {
+        int a;
+
+        System.out.println("enter a number");
+        Scanner sc = new Scanner(System.in);
+        a=sc.nextInt();
+
+        if (a<0)
+        {
+            System.out.println("number is negative");
+            
+        }
+
+        else 
+        {
+            System.out.println("number is positive");
+        }
+        sc.close();
+    }
+}
+    
